@@ -21,7 +21,7 @@ def write_hdf5(arr,outfile):
 # Path of the input images
 original_imgs_test = "./Data/images/"
 
-# Parameters of the input images, needed to be modified
+# Parameters of the input images, decided by the testing data
 Number = 3 # total number of images tested
 channels = 3
 height = 2048 # height of the testing images
