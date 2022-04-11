@@ -166,7 +166,8 @@ new_height = None
 new_width = None
 masks_test  = None
 # adjustable parameters which decide the number of patches
-Patch_Height = 512 
+# It is suggested to adjust the parameters according to the testing datasets.
+Patch_Height = 512
 Patch_Width = 512
 Stride_Height=32
 Stride_Width=32
@@ -182,7 +183,7 @@ patch_height = test_patches.shape[2]
 patch_width = test_patches.shape[3]
 
 #================ Test the data with well-trained model ================
-model=load_model('./Model/model2.h5',custom_objects={'tf': tf,'m_psnr':m_psnr,'m_mae':m_mae,'m_mse':m_mse})
+model=load_model('./Model/model2.h5',custom_objects={'tf': tf,'m_psnr':m_psnr,'m_mae':m_mae,'m_mse':m_mse}) # Select a model to test.
 test_patches=test_patches.transpose(0,2,3,1)
 print(test_patches.shape)
 results,lossout = model.predict(test_patches, batch_size=32, verbose=2)
