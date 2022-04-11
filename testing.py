@@ -43,7 +43,7 @@ def data_preprocess(data):
     assert(len(data.shape)==4)
     assert (data.shape[1]==3)  # check the input channel
     train_imgs = rgb2gray(data) # optional
-    # train_imgs = dataset_normalized(train_imgs)  # optional
+    train_imgs = dataset_normalized(train_imgs)  # optional
     train_imgs = train_imgs/255.  # image reduced to 0-1 
     return train_imgs
 
