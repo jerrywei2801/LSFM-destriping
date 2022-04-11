@@ -18,7 +18,7 @@ Two well-trained models is provided in https://drive.google.com/drive/folders/1H
 
 3.Run testing
 
-Some parameters need to be modified according to the testing dataset.
+Some parameters need to be modified according to the testing dataset. And run run_testing.py to test the data.
 
 Requirment
 
