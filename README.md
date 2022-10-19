@@ -22,9 +22,9 @@ Some parameters need to be modified according to the testing dataset. And run ru
 
 ## Requirment
 
-python 3.6
-keras 2.1.6
-tensorflow 1.13.1
+python 3.6 <br>
+keras 2.1.6 <br>
+tensorflow 1.13.1 <br>
 
 ## Reference
 
